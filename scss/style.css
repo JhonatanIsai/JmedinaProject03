@@ -1,0 +1,75 @@
+.inputArea, .tasksList {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: brown;
+}
+
+.button {
+  min-width: 45px;
+  min-height: 35px;
+  text-align: center;
+}
+
+.inputArea {
+  flex-direction: column;
+  justify-content: flex-start;
+  border: #f5f5f5 2px solid;
+}
+
+.inputArea .labelName {
+  font-size: x-large;
+  text-align: left;
+  font-weight: 700;
+}
+
+.inputArea .taskBox {
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  min-height: 30px;
+  padding-bottom: 20p;
+}
+
+.inputArea .button {
+  border: none;
+  background-color: #15ff00;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.tasksList {
+  justify-content: center;
+  border: whitesmoke 3px solid;
+  background-color: yellow;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.tasksList .emptyMSG {
+  text-align: center;
+}
+
+.tasksList .task {
+  font-style: italic;
+  background-color: pink;
+}
+
+.tasksList .button {
+  min-width: 45px;
+  min-height: 45px;
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */
