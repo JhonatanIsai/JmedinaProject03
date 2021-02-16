@@ -79,7 +79,7 @@
             ?>
             <?php foreach ($todolist as $customer) : ?>
                 <div class="task">
-                    <div>
+                    <div class="taskBlock">
                     <p><span class="bold">Task Number:</span> <?php echo $customer['ItemNum']; ?></p>
                     <p><span class="bold">Title:</span> <?php echo $customer['Title']; ?></p>
                     <p><span class="bold">Description:</span> <?php echo $customer['Description']; ?></p>

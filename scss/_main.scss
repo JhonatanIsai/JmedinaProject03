@@ -1,6 +1,6 @@
 $banner: black;
 $bannerText: whiteSmoke;
-$buttonColor: black;
+$buttonColor:#504f50;
 $background:lightblue;
 
 
@@ -19,13 +19,11 @@ $background:lightblue;
     justify-content: center;
 }
 
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 body{
   background-color:$background;
@@ -34,12 +32,11 @@ body{
     min-width: 45px;
     min-height: 35px;
     text-align: center;
-    
-
 }
 .inputArea{
     @include flexColumn();
     border: #f5f5f5 2px solid;
+
     .labelName{
         font-size: x-large;
         text-align: left;
@@ -55,7 +52,7 @@ body{
     }
     .button{
         border: none;
-        background-color: #15ff00;
+        background-color: $buttonColor;
         color: black;
         font-weight: 700;
         width: 100%;
@@ -63,28 +60,34 @@ body{
         padding-top: 5px;
         padding-bottom: 5px;
     }
-
-
-
 }
-    .tasksList{
-        @include flexColumn();
-        border: $background 3px solid;
-        
+.tasksList{
+    @include flexColumn();
+    border: $background 3px solid;
+    text-align: center;
+    padding-bottom: 10px;
+
+    .emptyMSG{
         text-align: center;
-        padding-bottom: 10px;
-
-        .emptyMSG{
-            text-align: center;
-        }
-        .task{
-            @include flexCenter();
-        }
-
-        .button{
-            min-width: 45px;
-            min-height: 45px;
-            background-color: red;
-            
-        }
     }
+
+    .task{
+        @include flexCenter();
+        border:whitesmoke 3px solid;
+        width: 90%;
+        padding-bottom: 15px;
+    }
+
+    .taskBlock{
+        text-align: left; 
+        padding-bottom: 5px;
+    }
+
+    .button{
+        min-width: 35px;
+        min-height: 35px;
+        background-color: whitesmoke;
+        border: black 1px solid;
+        padding-left: 5px;
+        }
+}

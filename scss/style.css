@@ -41,7 +41,7 @@ body {
 
 .inputArea .button {
   border: none;
-  background-color: #15ff00;
+  background-color: #504f50;
   color: black;
   font-weight: 700;
   width: 100%;
@@ -64,11 +64,21 @@ body {
 
 .tasksList .task {
   justify-content: center;
+  border: whitesmoke 3px solid;
+  width: 90%;
+  padding-bottom: 15px;
+}
+
+.tasksList .taskBlock {
+  text-align: left;
+  padding-bottom: 5px;
 }
 
 .tasksList .button {
-  min-width: 45px;
-  min-height: 45px;
-  background-color: red;
+  min-width: 35px;
+  min-height: 35px;
+  background-color: whitesmoke;
+  border: black 1px solid;
+  padding-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
