@@ -79,9 +79,11 @@
             ?>
             <?php foreach ($todolist as $customer) : ?>
                 <div class="task">
-                <p><span class="bold">Task Number:</span> <?php echo $customer['ItemNum']; ?></p>
-                <p><span class="bold">Title:</span> <?php echo $customer['Title']; ?></p>
-                <p><span class="bold">Description:</span> <?php echo $customer['Description']; ?></p>
+                    <div>
+                    <p><span class="bold">Task Number:</span> <?php echo $customer['ItemNum']; ?></p>
+                    <p><span class="bold">Title:</span> <?php echo $customer['Title']; ?></p>
+                    <p><span class="bold">Description:</span> <?php echo $customer['Description']; ?></p>
+                    </div>
                 <input class="button"  type="button" onclick="deleteItem( $customer['ItemNum'])">
                
                 </div>

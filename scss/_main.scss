@@ -1,6 +1,7 @@
 $banner: black;
 $bannerText: whiteSmoke;
 $buttonColor: black;
+$background:lightblue;
 
 
 
@@ -27,7 +28,7 @@ $buttonColor: black;
 
 
 body{
-  background-color: brown;
+  background-color:$background;
 }
 .button{
     min-width: 45px;
@@ -67,9 +68,9 @@ body{
 
 }
     .tasksList{
-        @include flexCenter();
-        border: whitesmoke 3px solid;
-        background-color:yellow ;
+        @include flexColumn();
+        border: $background 3px solid;
+        
         text-align: center;
         padding-bottom: 10px;
 
@@ -77,8 +78,7 @@ body{
             text-align: center;
         }
         .task{
-            font-style: italic;
-            background-color: pink;
+            @include flexCenter();
         }
 
         .button{

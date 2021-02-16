@@ -1,4 +1,4 @@
-.inputArea, .tasksList {
+.inputArea, .tasksList, .tasksList .task {
   display: flex;
   align-items: center;
 }
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: brown;
+  background-color: lightblue;
 }
 
 .button {
@@ -51,9 +51,9 @@ body {
 }
 
 .tasksList {
-  justify-content: center;
-  border: whitesmoke 3px solid;
-  background-color: yellow;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: lightblue 3px solid;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -63,8 +63,7 @@ body {
 }
 
 .tasksList .task {
-  font-style: italic;
-  background-color: pink;
+  justify-content: center;
 }
 
 .tasksList .button {
