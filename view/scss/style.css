@@ -50,6 +50,10 @@ body {
   padding-bottom: 5px;
 }
 
+.inputArea .category {
+  width: 100%;
+}
+
 .tasksList {
   flex-direction: column;
   justify-content: flex-start;
